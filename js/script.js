@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!dateInput.value) {
       alert("Por favor, selecione uma data antes de continuar.");
     } else if (dateInput.value === datecorrect) {
-      window.location.href = "../html/pagina.html";
+      window.location.href = "pagina.html";
     } else {
       alert("Data incorreta. Por favor, insira a data correta.");
     }
