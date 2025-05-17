@@ -1,0 +1,121 @@
+/* Fundo preto */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: hidden; /* Impede a rolagem da página */
+}
+
+/* Contêiner dos corações */
+.hearts-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Estilo dos corações */
+.heart {
+  position: absolute;
+  width: 100px; /* Tamanho do coração */
+  height: 40px;
+  background-image: url("../imagens/heart.png"); /* Substitua por sua imagem de coração */
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: float 5s linear infinite;
+}
+
+/* Animação dos corações */
+@keyframes float {
+  0% {
+    transform: translateY(30vh) rotate(0deg) scale(1); /* Começa fora da tela, na parte inferior */ /* Começa na parte inferior da tela */
+    opacity: 100%;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(-30deg) scale(0.8); /* Sobe para fora da tela */
+    opacity: 0; /* Desaparece gradualmente */
+  }
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h3 {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  z-index: 2;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.data {
+  color: rgb(4, 4, 4);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  z-index: 2;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.data:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.btn {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  z-index: 2;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.btn:hover {
+  cursor: pointer;
+}
