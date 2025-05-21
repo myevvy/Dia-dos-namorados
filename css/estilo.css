@@ -121,7 +121,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 1000px) and (max-height: 800px) {
+@media only screen and (max-width: 767px) {
   h1 {
     font-size: 25px;
     top: 70px;
